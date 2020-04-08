@@ -67,6 +67,7 @@
         id="github"
         class="headimg clickable"
         src="./img/githubblack.png"
+        onclick ="git()"
         alt="Github Logo"
       />
       <img
@@ -96,7 +97,8 @@
           data-intro="Documentation and help is here"
           title="Read the docs"
           class="insideAbout"
-        >
+          onclick="git()"
+              >
           Docs</span
         >
         <span
@@ -269,5 +271,9 @@
   <script src="./js/blink.js"></script>
 
   <script src="./js/tour.js"></script>
-  <script></script>
+  <script>
+  function git(){
+  window.open("https://github.com/bajpai244/kodkaratedocs",_blank);  
+}
+  </script>
 </html>
