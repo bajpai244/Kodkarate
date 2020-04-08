@@ -1,0 +1,213 @@
+html {
+  font-size: 20px;
+  min-height: 100%;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+}
+#input {
+  margin: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+#editor1 {
+  margin: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+#output {
+  margin: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.Header {
+  width: 100%;
+  height: 10%;
+  background-color: #1e1e1e;
+  display: flex;
+  flex-wrap: nowrap;
+  border-bottom: 0.1px white solid;
+}
+.headimg {
+  position: relative;
+  height: 8vh;
+  margin-left: 2%;
+  margin-top: 0.3%;
+}
+.grow {
+  flex-grow: 1;
+}
+#logo-cont {
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+
+  flex-grow: 1;
+}
+#title {
+  position: relative;
+  color: white;
+  font-family: 'Sarala', sans-serif;
+  font-size: calc(0.9rem + 1vw);
+  letter-spacing: 1vw;
+  left: 2vw;
+}
+@media only screen and (max-width: 520px) {
+  #about {
+    left: 5%;
+  }
+}
+
+#settings {
+  width: 100%;
+  height: 7%;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #1e1e1e;
+  justify-content: space-between;
+}
+
+#about {
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  right: 5vh;
+  justify-content: space-between;
+}
+.about {
+  position: relative;
+  color: white;
+  font-size: calc(0.9rem+1vh);
+  top: 25%;
+  left: -5%;
+}
+.about:hover {
+  position: relative;
+  transform: translateY(-1px);
+}
+#save {
+  height: 90%;
+}
+#save:hover {
+  cursor: pointer;
+}
+
+#reset {
+  margin-left: 1vh;
+}
+
+#run_button {
+  margin-left: 2vh;
+}
+
+#play {
+  height: 90%;
+  border-radius: 50vh;
+}
+#pause {
+  height: 90%;
+  border-radius: 50vh;
+}
+.clickable:hover {
+  position: relative;
+  top: 1px;
+  cursor: pointer;
+}
+#reset {
+  height: 80%;
+  border-radius: 100vh;
+}
+#timer-value {
+  font-size: calc(1vw);
+}
+#know {
+  position: relative;
+  margin-top: 1vh;
+}
+#doc {
+  margin-top: 1vh;
+  margin-right: 1v;
+}
+
+.insideAbout {
+  margin-top: 3vh;
+  color: white;
+}
+
+.insideAbout:hover {
+  position: relative;
+  transform: translateY(-1px);
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/** Here the button styles will go  **/
+
+.circle-wrapper {
+  position: relative;
+  display: block;
+  height: 40px;
+  width: 40px;
+  background: #141414;
+  border-radius: 50%;
+}
+.circle-wrapper__circle {
+  width: 100%;
+  height: 100%;
+  animation: rotate 3.33s linear infinite;
+}
+.circle-wrapper__circle:after,
+.circle-wrapper__circle:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 50%;
+}
+.circle-wrapper__circle:before {
+  border-radius: 500px 500px 0 0;
+  background-image: linear-gradient(to right, #ffffff, #ffffff);
+}
+.circle-wrapper__circle:after {
+  top: 55%;
+  border-radius: 0 0 500px 500px;
+  background-image: linear-gradient(to right, #141414, transparent);
+}
+.circle-wrapper__content {
+  position: absolute;
+  top: 55%;
+  left: 55%;
+  transform: translate(-55%, -55%);
+  z-index: 2;
+  height: 90%;
+  width: 90%;
+  background: #ffffff;
+  border-radius: 50%;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/**
+ * Additional styles.
+ */
+.description {
+  margin-bottom: 15px;
+}

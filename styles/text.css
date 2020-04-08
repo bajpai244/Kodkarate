@@ -1,0 +1,14 @@
+.file-name {
+  position: relative;
+  height: 5vh;
+  width: 20vh;
+  padding-left: 3.2vh;
+  top: 1.3vh;
+  color: #2c2c2c;
+  background-image: -webkit-linear-gradient(
+    top,
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0)
+  );
+  background-attachment: green;
+}

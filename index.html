@@ -1,0 +1,273 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Free and open-source online code editor that allows you to write and execute code from a rich set of languages.
+      More than 16  programming languages are supported"
+    />
+    <meta
+      name="keywords"
+      content="online editor, online code editor, online ide, online compiler, online interpreter, run code online, learn programming online,
+            online debugger, programming in browser, online code runner, online code execution, debug online, debug C code online, debug C++ code online,
+            programming online, snippet, snippets, code snippet, code snippets, pastebin, execute code, programming in browser, run c online, run C++ online,
+            run java online, run python online, run ruby online, run c# online, run rust online, run pascal online, "
+    />
+    <meta name="author" content="Harsh Bajpai" />
+    <meta property="og:title" content="Kodkarate - Free and open-source IDE" />
+    <meta
+      property="og:description"
+      content="Kodkarate is an online code editor which allows to program in 16 programming language from the same code editor it fast efficient and time saving"
+    />
+
+    <!---->
+    <title>KodKarate</title>
+    <!--Add meta tags and also make update the current licesne-->
+    <script
+      src="./js/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="./js/goldenlayout.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css"
+      integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy"
+      crossorigin="anonymous"
+    />
+
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="./styles/goldenlayout-base.css"
+    />
+    <link rel='icon' href='./img/ninjawhite.ico' type='image/x-icon'/ >
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="https://golden-layout.com/files/latest/css/goldenlayout-dark-theme.css"
+    />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/mousetrap/1.4.6/mousetrap.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Sarala&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="./styles/introjs.css" />
+    <script type="text/javascript" src="./js/intro.js"></script>
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/select.css" />
+    <link rel="stylesheet" href="./styles/text.css" />
+    <link rel="stylesheet" href="./styles/button.css" />
+  </head>
+  <body>
+    <div class="Header">
+      <img
+        id="github"
+        class="headimg clickable"
+        src="./img/githubblack.png"
+        alt="Github Logo"
+      />
+      <img
+        id="product"
+        class="headimg clickable"
+        src="./img/producthuntlogo.png"
+        alt="Prodcuthuntlog"
+      />
+      <span class="grow"></span>
+      <span class="grow"></span>
+      <div id="logo-cont">
+        <img
+          class="headimg"
+          src="./img/ninjaWhite.png"
+          alt="Prodcuthuntlog"
+          id="logo"
+        />
+        <span data-step="1" data-intro="Welcome To code KodKarate " id="title">
+          KodKarate
+        </span>
+      </div>
+      <span class="grow"></span>
+
+      <span id="About" class="grow">
+        <span
+          data-step="11"
+          data-intro="Documentation and help is here"
+          title="Read the docs"
+          class="insideAbout"
+        >
+          Docs</span
+        >
+        <span
+          onclick="startTour()"
+          title="Take a tour of the developemnt environment"
+          class="insideAbout"
+          id="ide_tour"
+          >Ide Tour</span
+        >
+      </span>
+    </div>
+    <div id="settings">
+      <button
+        data-step="2"
+        data-intro="Use it to open new tab"
+        id="new"
+        title="open new tab"
+        onclick="newtab()"
+        class="button large"
+      >
+        New tab
+      </button>
+
+      <span
+        data-step="3"
+        data-intro="Select Programming language"
+        id="language"
+        class="custom-dropdown small"
+      >
+        <select
+          title="select language"
+          id="language-select"
+          onchange="language_change()"
+        >
+          <option>C++(GCC 9.2.0)</option>
+          <option>C(GCC 9.2.0)</option>
+          <option>Java(OpenJDK 13.0.1)</option>
+          <option>Python(2.7.17)</option>
+          <option>Python(3.8.1)</option>
+          <option>Rust(1.40.0)</option>
+          <option>TypeScript(3.7.4)</option>
+          <option>Prolog(GNU Prolog 1.4.5)</option>
+          <option>Php(7.4.1)</option>
+          <option>Assembly(Nasm 2.14.02)</option>
+          <option>Common lisp(SBCL 2.0.0)</option>
+          <option>D(DMD 2.089.1)</option>
+          <option>Elixir(1.9.4)</option>
+          <option>Erlang(OTP 22.2)</option>
+          <option>Fortran(9.2.0)</option>
+          <option>GO</option>
+          <option>Haskell(GHC 8.8.1)</option>
+          <option>Nodejs(12.14.0)</option>
+          <option>Lua(5.3.5)</option>
+          <option>OCaml(4.09.0)</option>
+          <option>Octave(5.1.0)</option>
+        </select>
+      </span>
+      <span
+        data-step="4"
+        data-intro="Select Ide theme"
+        id="mode"
+        class="custom-dropdown small"
+      >
+        <select title="Select Theme" id="mode-select" onchange="mode_change()">
+          <option>twilight</option>
+          <option>chrome</option>
+          <option>terminal</option>
+          <option>dracula</option>
+          <option>sqlserver</option>
+          <option>monokai</option>
+          <option>merbivore</option>
+          <option>tomorrow_night_blue</option>
+          <option>iplastic</option>
+          <option>gob</option>
+          <option>cobalt</option>
+          <option>tomorrow_night_bright</option>
+          <option>chaos</option>
+          <option>tomorrow_night</option>
+          <option>visualforce</option>
+          <option>gruvbox</option>
+          <option>tomorrow_night_eighties</option>
+        </select>
+      </span>
+      <!---->
+
+      <input
+        data-step="5"
+        data-intro="Edit name of the file"
+        id="file-name"
+        class="file-name"
+        onkeyup="change_file_name()"
+        placeholder="file-name"
+        type=""
+        title="Filename"
+      />
+
+      <!---->
+      <button
+        data-step="6"
+        data-intro="Run code from here"
+        title="run code"
+        class="button large"
+        id="run_button"
+        onclick="main_engine()"
+      >
+        Run (F9)
+      </button>
+      <img
+        data-step="7"
+        data-intro="Click here to downlaod the code"
+        src="/img/savewhite.png"
+        class="clickable"
+        title="Save the file"
+        id="save"
+        alt=""
+        onclick="initiate_download()"
+      />
+      <button
+        data-step="8"
+        data-intro="Reset the editor layout"
+        title="Reset Layout"
+        id="reset"
+        onclick="resetlayout()"
+        class="button large"
+      >
+        Reset Layout
+      </button>
+      <img
+        data-step="9"
+        data-intro="Click to start timer"
+        title="start timer"
+        title="start"
+        src="./img/playwhite.jpg"
+        id="play"
+        alt=""
+        class="clickable"
+        onclick="start()"
+      />
+      <button title="Timer" id="timer-value" class="button large">
+        00:00:00
+      </button>
+      <img
+        data-step="10"
+        data-intro="Click to reset the timer"
+        class="clickable"
+        src="./img/resetwhite.jpeg"
+        id="reset"
+        onclick="reset()"
+        alt=""
+        title="reset"
+      />
+
+      <!---->
+      <!---->
+    </div>
+  </body>
+
+  <script src="../src-noconflict/ace.js"></script>
+  <script src="../src-noconflict/ext-language_tools.js"></script>
+  <script src="./js/hello_collection.js"></script>
+
+  <script src="./js/lang_mode.js"></script>
+  <script src="./js/editor.js"></script>
+  <script src="./js/filename.js"></script>
+  <script src="./js/layout.js"></script>
+  <script src="./js/reset.js"></script>
+  <script src="./js/timer.js"></script>
+  <script src="./js/Base64.js"></script>
+  <script src="./js/run.js"></script>
+  <script src="./js/blink.js"></script>
+
+  <script src="./js/tour.js"></script>
+  <script></script>
+</html>
