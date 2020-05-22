@@ -1,23 +1,95 @@
-Ace (Ajax.org Cloud9 Editor)
-============================
-[![CDNJS](https://img.shields.io/cdnjs/v/ace.svg)](https://cdnjs.com/libraries/ace)
-[![npm](https://img.shields.io/npm/v/ace-builds.svg)](https://www.npmjs.com/package/ace-builds)
+# Welcome To KodKarate
 
-Ace is a code editor written in JavaScript.
+## Introduction
 
-This repository has only generated files.
-If you want to work on ace please go to https://github.com/ajaxorg/ace instead.
+KodKarate is an open source IDE powered by _Judge Api_ with support for 21 programming languages and the editor can be used in 17 themes.
 
+![Code Running GIF](./GIF/runcode.gif)
 
-here you can find pre-built files for convenience of embedding.
-it contains 4 versions
- * [src](https://github.com/ajaxorg/ace-builds/tree/master/src)              concatenated but not minified
- * [src-min](https://github.com/ajaxorg/ace-builds/tree/master/src-min)      concatenated and minified with uglify.js
- * [src-noconflict](https://github.com/ajaxorg/ace-builds/tree/master/src-noconflict)      uses ace.require instead of require
- * [src-min-noconflict](https://github.com/ajaxorg/ace-builds/tree/master/src-min-noconflict)      concatenated, minified with uglify.js, and uses ace.require instead of require
+The documentation comes in two languages **English and Hindi**
 
+### Languages Supported:-
 
-For a simple way of embedding ace into webpage see [editor.html](https://github.com/ajaxorg/ace-builds/blob/master/editor.html) or list of other [simple examples](https://github.com/ajaxorg/ace-builds/tree/master/demo)
-To see ace in action go to [kitchen-sink-demo](http://ajaxorg.github.com/ace-builds/kitchen-sink.html), [scrollable-page-demo](http://ajaxorg.github.com/ace-builds/demo/scrollable-page.html) or [minimal demo](http://ajaxorg.github.com/ace-builds/editor.html),
+| Language                   |
+| -------------------------- |
+| C++(GCC 9.2.0)             |
+| C(GCC 9.2.0)               |
+| Java(OpenJDK 13.0.1)       |
+| Python(2.7.17)             |
+| Python(3.8.1)              |
+| Rust(1.40.0)               |
+| TypeScript(3.7.4)          |
+| Prolog(GNU Prolog 1.4.5)   |
+| Php(7.4.1)                 |
+| Assembly(Nasm 2.14.02)     |
+| Common lisp (SBCL 2.0.0)0) |
+| D(DMD 2.089.1)             |
+| Elixir(1.9.4)              |
+| Erlang(OTP 22.2)           |
+| Fortran(9.2.0)             |
+| GO                         |
+| Haskell(GHC 8.8.1)         |
+| Lua(5.3.5)                 |
+| Nodejs(12.14.0)            |
+| OCaml(4.09.0)              |
+| Octave(5.1.0)              |
 
+![Supported Language](./GIF/multi_language.gif)
 
+### Multi Tab Support
+
+Kodkarate supports a multitab development environment in which it is possible to work on multiple file at the same time.
+
+![Supported Language](./GIF/multi_tab.gif)
+
+### Code Download Support
+
+Kodkarate comes with the ability to allow you to download a file in the respective programming language extension so that you can have a valid copy of your code.
+
+![Supported Language](./GIF/filedownload.gif)
+
+### code snippets
+
+Kodkarate supports snippets and autocomplete in 19 programming languages and it acts as a time saver for you
+
+### Resizable Layout
+
+The editor comes with a
+completely resizable layout and the whole editor is responsive in terms of the resize which they go through.
+
+![Supported Language](./GIF/rez-layout.gif)
+
+### Track Your Time
+
+The platform comes with a support for a timer so that you can track the time taken by you to solve a praticular problem
+
+![Supported Language](./GIF/timer.gif)
+
+### Keyboard Shortcuts
+
+Undo is Available with **ctrl+z** and you can search with the help of **ctrl+f**
+
+Program can be runned directly by **f9** key.
+
+### Custom File name
+
+The platform allows you to have custom file name so that you can download the files by the name you want
+
+![Supported Language](./GIF/filedownload.gif)
+
+### Optimized Code
+
+The platform has been coded by taking in consideration of the javascript engine internals so that it can deliever optimum performance.
+
+### Countribution
+
+The project is open source and currently in beta and needs countribution in term to increase the product quality
+
+You can countribute in the following areas:-
+
+- documentaion
+- Source Code
+- User interface
+- Mobile version development
+
+The promotion of the platforms among your peers can be of great help to the project and will help the project by making it available to a bigger audience.
