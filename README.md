@@ -2,11 +2,11 @@
 
 ## Introduction
 
-KodKarate is an open source IDE powered by _Judge Api_ with support for 21 programming languages and the editor can be used in 17 themes.
+KodKarate is an open source IDE powered by _Judge Api_ with support for 21 programming languages and 17 themes.
 
 ![Code Running GIF](./GIF/runcode.gif)
 
-The documentation comes in two languages **English and Hindi**
+The documentation comes in two languages: **English** and **Hindi**
 
 ### Languages Supported:-
 
@@ -36,6 +36,8 @@ The documentation comes in two languages **English and Hindi**
 
 ![Supported Language](./GIF/multi_language.gif)
 
+## Features
+
 ### Multi Tab Support
 
 Kodkarate supports a multitab development environment in which it is possible to work on multiple file at the same time.
@@ -48,14 +50,14 @@ Kodkarate comes with the ability to allow you to download a file in the respecti
 
 ![Supported Language](./GIF/filedownload.gif)
 
-### code snippets
+### Snippets and Autocomplete
 
 Kodkarate supports snippets and autocomplete in 19 programming languages and it acts as a time saver for you
 
 ### Resizable Layout
 
 The editor comes with a
-completely resizable layout and the whole editor is responsive in terms of the resize which they go through.
+completely resizable layout and the whole editor is responsive.
 
 ![Supported Language](./GIF/rez-layout.gif)
 
@@ -67,11 +69,11 @@ The platform comes with a support for a timer so that you can track the time tak
 
 ### Keyboard Shortcuts
 
-Undo is Available with **ctrl+z** and you can search with the help of **ctrl+f**
+Normal keyboard shortcuts are supported, like **ctrl+z** for undo and you can searching with **ctrl+f**
 
-Program can be runned directly by **f9** key.
+Program can be run using the **f9** key.
 
-### Custom File name
+### Custom Filenames
 
 The platform allows you to have custom file name so that you can download the files by the name you want
 
@@ -87,7 +89,7 @@ The project is open source and currently in beta and needs countribution in term
 
 You can countribute in the following areas:-
 
-- documentaion
+- Documentation
 - Source Code
 - User interface
 - Mobile version development
